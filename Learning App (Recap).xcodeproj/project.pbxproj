@@ -18,6 +18,7 @@
 		1D5AB64D29C36A90006A23AD /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AB64C29C36A90006A23AD /* HomeViewRow.swift */; };
 		1DAEE92929C3772100098AC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAEE92829C3772100098AC1 /* ContentView.swift */; };
 		1DAEE92B29C444DF00098AC1 /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAEE92A29C444DF00098AC1 /* ContentViewRow.swift */; };
+		1DAEE92D29C45B0100098AC1 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAEE92C29C45B0100098AC1 /* ContentDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		1D5AB64C29C36A90006A23AD /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 		1DAEE92829C3772100098AC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1DAEE92A29C444DF00098AC1 /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
+		1DAEE92C29C45B0100098AC1 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				1D5AB64C29C36A90006A23AD /* HomeViewRow.swift */,
 				1DAEE92829C3772100098AC1 /* ContentView.swift */,
 				1DAEE92A29C444DF00098AC1 /* ContentViewRow.swift */,
+				1DAEE92C29C45B0100098AC1 /* ContentDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				1D5AB63429C34A7B006A23AD /* HomeView.swift in Sources */,
 				1D5AB64D29C36A90006A23AD /* HomeViewRow.swift in Sources */,
 				1DAEE92929C3772100098AC1 /* ContentView.swift in Sources */,
+				1DAEE92D29C45B0100098AC1 /* ContentDetailView.swift in Sources */,
 				1D5AB63229C34A7B006A23AD /* LearningApp.swift in Sources */,
 				1DAEE92B29C444DF00098AC1 /* ContentViewRow.swift in Sources */,
 				1D5AB64529C34C53006A23AD /* ContentModel.swift in Sources */,
