@@ -1,12 +1,4 @@
-//
-//  Models.swift
-//  Learning App (Recap)
-//
-//  Created by Almat Alibekov on 16.03.2023.
-//
-
 import Foundation
-
 
 struct Module: Decodable, Identifiable {
     
@@ -14,7 +6,6 @@ struct Module: Decodable, Identifiable {
     var category: String
     var content: Content
     var test: Test
-    
 }
 
 struct Content: Decodable, Identifiable {
@@ -44,7 +35,6 @@ struct Test: Decodable, Identifiable {
     var time: String
     var description: String
     var questions: [Question]
-    
 }
 
 struct Question: Decodable, Identifiable {
@@ -53,5 +43,4 @@ struct Question: Decodable, Identifiable {
     var content: String
     var correctIndex: Int
     var answers: [String]
-    
 }

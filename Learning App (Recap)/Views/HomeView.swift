@@ -11,6 +11,7 @@ struct HomeView: View {
     
     @EnvironmentObject var model: ContentModel
     
+    
     var body: some View {
         
         NavigationView {
@@ -21,40 +22,47 @@ struct HomeView: View {
                 ScrollView {
                     
                     LazyVStack {
+                        
                         ForEach(model.modules) { module in
-                            
-                            
                             
                             VStack (spacing: 20) {
                                 
                                 NavigationLink(
-                                    destination: ContentView()
+                                    destination:
+                                        ContentView()
                                         .onAppear(perform: {
                                             model.beginModule(module.id)
                                         }),
+                                    tag: module.id,
+                                    selection: $model.currentContentSelected,
                                     label: {
+                                        
                                         // Learning Card
                                         HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) Lessons", time: module.content.time)
+                                        
                                     })
                                 
-                               
+                                
                                 
                                 
                                 // Test Card
-                                
                                 HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, count: "\(module.test.questions.count) Lessons", time: module.test.time)
-                                
                             }
                         }
                         
                     }
                     .accentColor(.black)
                     .padding()
+                   
                     
                 }
             }
             .navigationTitle("Get Started")
         }
+        .navigationViewStyle(.stack)
+
+        
+        
     }
 }
 
