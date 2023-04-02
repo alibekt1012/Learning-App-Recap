@@ -12,6 +12,7 @@ struct ContentViewRow: View {
     @EnvironmentObject var model: ContentModel
     var index: Int
     
+    
     var body: some View {
         let lesson = model.currentModule!.content.lessons[index]
         
